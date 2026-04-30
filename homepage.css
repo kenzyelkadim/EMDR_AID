@@ -1,0 +1,97 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --char: #e7bf1e;
+  --dust: #ce3737;
+  --steel: #691f21;
+  --aqua: #121eaa;
+}
+
+body {
+  background-color: var(--aqua);
+  color: var(--char);
+  font-family: "PT Serif", serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  background-color: var(--steel);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  background-color: var(--dust);
+}
+
+main {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 24px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 8px;
+  background-color: var(--dust);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--steel);
+}
+
+.hero {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.hero-text {
+  flex: 1;}
+
+
+.hero-img img {
+  width: 100%;
+  max-width: 500px;
+  height: 400px;
+  object-fit: contain;
+}
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 14px;
+  color: var(--char);
+  opacity: 0.7;
+}
+
+body {
+  font-family: "PT Serif", serif;
+}

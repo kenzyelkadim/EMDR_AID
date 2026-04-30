@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>EMDR Session</title>
+  <link rel="stylesheet" href="session.css" />
+
+</html>
+<nav>
+    <li><a href="homepage.html">EXIT</a></li>
+</nav>
+<main>
+  <div class="controls">
+    <div class="control-group">
+      <label for="speed">Speed</label>
+      <input type="range" id="speed" min="1" max="10" value="5" />
+      <span id="speed-value">5</span>
+    </div>
+
+    <div class="control-group">
+      <label for="passes">Passes per set</label>
+      <input type="range" id="passes" min="10" max="50" value="24" />
+      <span id="passes-value">24</span>
+    </div>
+
+    <div class="info">
+      <p>Passes: <span id="pass-count">0</span></p>
+    </div>
+
+    <div class="buttons">
+      <button id="start-button" class="button">Start</button>
+      <button id="stop-button" class="button">Stop</button>
+    </div>
+  </div>
+</main>
+<script src="session2.js"></script>
+</html>
