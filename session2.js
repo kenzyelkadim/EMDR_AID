@@ -6,6 +6,7 @@ const passesSlider = document.getElementById("passes")
 const passesValue = document.getElementById("passes-value")
 const startButton = document.getElementById("start-button")
 const stopButton = document.getElementById("stop-button")
+const patientType = document.getElementById("patient-type")
 const track = document.querySelector(".track")
 let running = false
 let dotX = 0
@@ -16,7 +17,10 @@ let loop
 
 
 function animate(){
-    dotX += speedslider.value*direction*0.7
+    let multiplier = 1
+    if (patientType.value === "child") multiplier = 0.5
+    if (patientType.value === "elderly") multiplier = 0.7
+    dotX += speedslider.value * direction * 0.7 * multiplier
     dot.style.left = dotX + "px"
    
   if (dotX >= track.offsetWidth - dot.offsetWidth) {
